@@ -45,6 +45,8 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseHttpsRedirection();
+
 /// Put decluttered code here
 var studentsRoute = app.MapGroup("/api/students");
 
